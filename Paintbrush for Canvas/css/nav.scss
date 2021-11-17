@@ -1,0 +1,137 @@
+$nav-bg: #2b3033;
+$blue: #3498DB;
+$red: #E74C3C;
+$yellow: #F1C40F;
+$green: #2ECC71;
+$morado: #9B59B6;
+$white: #F5F5F5;
+$ease: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+* {
+    box-sizing: border-box;
+}
+
+
+.nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    backface-visibility: hidden;
+    
+    &__list {
+        display: flex;
+        flex-flow: column wrap;
+        height: 45vh;
+        transform: translate(0, -100%);
+        transition: $ease;
+        
+        &--active {
+        transform: translate(0, 0);
+        }
+    }
+    
+    &__item {
+        flex: 1;
+        position: relative;
+    }
+    
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        font-size: 24px;
+        background: $nav-bg;
+        transition: $ease;
+        
+        &:hover {
+        background: mix(black, $nav-bg, 10);
+        }
+    }
+    
+    @media (max-width: 640px) {
+        &__list {
+        height: 90vh;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li a{
+        display: flex;
+        align-items: center;
+    }
+
+    .burger {
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: $nav-bg;
+    cursor: pointer;
+    transition: $ease;
+        
+        &:hover {
+            background: mix(black, $nav-bg, 10);
+        }
+        
+        span img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .c-blue {
+    color: $blue;
+    }
+
+    .c-red {
+    color: $red;
+    }
+
+    .c-green {
+    color: $green;
+    }
+
+    .c-yellow {
+    color: $yellow;
+    }
+
+    .c-morado{
+    color: $morado;
+    }
+
+    .c-white{
+        color: $white;
+    }
+
+    .b-blue {
+    background: $blue;
+    }
+
+    .b-red {
+    background: $red;
+    }
+
+    .b-green {
+    background: $green;
+    }
+
+    .b-yellow {
+    background: $yellow;
+    }
+}

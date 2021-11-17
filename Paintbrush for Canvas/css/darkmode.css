@@ -1,0 +1,368 @@
+:root {
+  --darkreader-bg--ic-brand-primary-darkened-5: #4b5255;
+  --darkreader-text--ic-brand-primary-darkened-10: #aca59a;
+  --darkreader-border--ic-brand-primary-darkened-10: #6d6559;
+  --ic-brand-primary-darkened-15: #5A5A5A;
+  --ic-brand-primary-lightened-5: #707070;
+  --ic-brand-primary-lightened-10: #787878;
+  --darkreader-bg--ic-brand-primary-lightened-15: #60686c;
+  --darkreader-border--ic-brand-primary-lightened-15: #625b51;
+  --darkreader-bg--ic-brand-button--primary-bgd-darkened-5: #2a3239;
+  --darkreader-border--ic-brand-button--primary-bgd-darkened-15: #7a7164;
+  --darkreader-bg--ic-brand-button--secondary-bgd-darkened-5: #4b5255;
+  --darkreader-border--ic-brand-button--secondary-bgd-darkened-15: #6e665b;
+  --darkreader-text--ic-brand-font-color-dark-lightened-15: #b2aba1;
+  --darkreader-text--ic-brand-font-color-dark-lightened-30: #9f968a;
+  --darkreader-text--ic-link-color-darkened-10: #aca59a;
+  --darkreader-border--ic-link-color-darkened-10: #6d6559;
+  --darkreader-border--ic-link-color-lightened-10: #645d53;
+  --darkreader-bg--ic-brand-primary: #4f5659;
+  --darkreader-text--ic-brand-primary: #a69e92;
+  --darkreader-border--ic-brand-primary: #696257;
+  --darkreader-text--ic-brand-font-color-dark: #c4bfb7;
+  --darkreader-border--ic-brand-font-color-dark: #797164;
+  --darkreader-bg--ic-link-color: #4f5659;
+  --darkreader-text--ic-link-color: #a69e92;
+  --darkreader-border--ic-link-color: #696257;
+  --darkreader-bg--ic-brand-button--primary-bgd: #2c353b;
+  --darkreader-text--ic-brand-button--primary-text: #e8e6e3;
+  --darkreader-bg--ic-brand-button--secondary-bgd: #4f5659;
+  --darkreader-text--ic-brand-button--secondary-text: #e8e6e3;
+  --darkreader-bg--ic-brand-global-nav-bgd: #2c353b;
+  --darkreader-text--ic-brand-global-nav-ic-icon-svg-fill: #e8e6e3;
+  --darkreader-bg--ic-brand-global-nav-ic-icon-svg-fill--active: var(--darkreader-bg--ic-brand-primary);
+  --darkreader-text--ic-brand-global-nav-ic-icon-svg-fill--active: var(--darkreader-text--ic-brand-primary);
+  --darkreader-border--ic-brand-global-nav-ic-icon-svg-fill--active: var(--darkreader-border--ic-brand-primary);
+  --darkreader-bg--ic-brand-global-nav-menu-item__text-color: #181a1b;
+  --darkreader-text--ic-brand-global-nav-menu-item__text-color: #e8e6e3;
+  --darkreader-bg--ic-brand-global-nav-menu-item__text-color--active: var(--darkreader-bg--ic-link-color);
+  --darkreader-text--ic-brand-global-nav-menu-item__text-color--active: var(--darkreader-text--ic-link-color);
+  --darkreader-border--ic-brand-global-nav-avatar-border: #303436;
+  --darkreader-bg--ic-brand-global-nav-menu-item__badge-bgd: var(--darkreader-bg--ic-brand-primary);
+  --darkreader-text--ic-brand-global-nav-menu-item__badge-text: #e8e6e3;
+  --darkreader-bg--ic-brand-global-nav-logo-bgd: #b80016;
+  --darkreader-bgimg--ic-brand-header-image: url(https://instructure-uploads.s3.amazonaws.com/account_93740000000000001/attachments/4913/200x200-01.jpg);
+  --darkreader-bgimg--ic-brand-mobile-global-nav-logo: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zMzMgLTAuNjY3IC0wLjY2NyAwLjAwMCAxLjAwMCAtMC42NjcgMC4zMzMgLTAuNjY3IDAuMDAwIDEuMDAwIC0wLjY2NyAtMC42NjcgMC4zMzMgMC4wMDAgMS4wMDAgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvanBlZztiYXNlNjQsLzlqLzRBQVFTa1pKUmdBQkFRRUFTQUJJQUFELzJ3QkRBQUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUgvMndCREFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRRUJBUUVCQVFFQkFRSC93QUFSQ0FBd0FEQURBUkVBQWhFQkF4RUIvOFFBSGdBQUFRTUVBd0FBQUFBQUFBQUFBQUFBQUFRRkJ3SURCZ2tCQ0FyL3hBQXNFQUFCQlFFQUFnRURBZ1VGQUFBQUFBQUVBUUlEQlFZSEFBZ1NFUk1oQ1JRVkZpSWpNUmNZSkVGQy84UUFIQUVCQUFFRkFRRUFBQUFBQUFBQUFBQUFBQUVEQkFVR0J3Z0MvOFFBTHhFQUFRUUNBZ0VDQkFVRUF3QUFBQUFBQkFFQ0F3VUFCZ2NSRWhNaENCUXhVUlVpSTBHQlFuR1I4REpoMHYvYUFBd0RBUUFDRVFNUkFEOEE5L0hqR0hqR0hqR0hqR0hqR0hqR0pwekF4cEJvU1NoaDVUSkZoRWlubmlpa0ttUnZ6V0laajNOZFBJakVWeXNpUnprYW4xK24wOFl5aGJBQkRVclZORVN4ZEYrNGFBcE1QNzFZRVg2TE1ndnorK3NTTCtQdUl6NGZYL3Z4aktrT0NVaG9pR0NxVzZPU1ZvcUVSS1E2S0dUN1Uwallmbjl4WTRwZjdVajBiOFdTZjBPVkhmanhqTGlFRHViRTlzOEtzSVZHd1BTVml0bWM1cm5OYkU1RitraXExcm5JakZWVmExeXArRVh4akxJdGdBYTRoZ1JvaGJ3NWZzRnNGSmhuY0xPbitZU0d4UGVzTXY0WCszSWpYL2ovQUI0eG5JaHdSN1pIZ21DbXNobWVQSzhRaUloc1U4WDRrZ2tkQzk2TW1qWDhQamNxUFovNlJQR002V2RCcDhwRDNUWTJQWk9kNkxmMDk5bWVjZ2NjbnE4WmViT0NyTHJiQzNrMWxWVmtVNDA4ZVIwRDd1V292U3JFb2lvY1pWUXdTdHMzd1ZjME1MUGhmcXZmdjdlMysvZk1BMkk5dGU5dHJ6V2MvQW9OTFNldytKY2sxSngzU2s2cTB3d1pkYldTYis1N1RHUkhSUlorNnAzeWhGVXNJODhNQWJmNE1kSCs3akxLalpINy9UK3I3TC9udkhJZmxyUWp4TjBGaHpodDR2dXRablM2YUNuT1pvZjVFc3RsWlZ4MHJ6a2kvZE54WnVkbmMwaG55YlF6RFMvdkh0V1YzN2hXUC9mKy93QVprT014TzBwT2xYV1hYSldSZUc0Qi9xTHVlVy9jL3dDTFViQzE2dkJPWmxzMVdGa05XRlpNSUdadXN4TEtxUFN2WmRVeS93QkxHSXNqSlJQZnI5azkwL242ZjQ5L2Y3NUdQTTZTZXcwdHVjTmt6c3ZWM1hyYjBDbTJJZkxPSDZ6bUU5RnBTTERMdWh5Z1pGNFROL1BXOG9JeWJsS1Exa1VCQ1RLUkpES1Eyd2ZHT3lFL3QxN0w5RTY5L3dEcjdyL0g5OG1YMVhDV251ZFBUVkdZb0g1Y1RLWkdCdlE2dmp1ZzRuYVcxeUROYkN1eStqb0wxNnMwRnZVQS9hc0M3MnFqaWdIbXNuaEYvS1o4TFkyUzM3ZnQ5K3V1OGpmdG5zVWZ5UDMzNHpoOXIxV2w1eHhEWCtxUGVkU1NMc2JYT1pyS1hmVGNadU9aTFdFUlg5OHdWMGwzU1pHMDBCanF3YTFZeHRTOHM4a0tSa0gzbzlUc0xSNFcwVm8wNXJSSzJlanRwbnRtZEZGQktZT1ZYcEc3MXBHcCtyRkJKT3FScEtpTEc1NzFZN3c4bWVxK1ArTEI5MytHemZkaTEvVExEYXVRcVBtZmplbmltb1E3VzJ1cS9VYi9BRjdiZm00bjF0YTZaRzE5aGRoMWtEUzVRMWNwcllob2lHdWY2YTZnZFIrb2I3V2Y3WC9UQnVSM0hVTGp0d2ZycHNQY1h0ZG5sdVFGOUFzZWhVMUh0Q2Fqa1hPZDRGbU1pY0xnOEQxK3ZEMTgxanRuZ1VRNFZibWFnNFd4YkdjK1ora2tiUmJPcXFGQkN6cFQyVk11eEh1RERhVzh1R09kV0FCRk1aQS81Y2EwUnBQUkNOaC9LTDJ5VlBmdjNOVWZDOXd3dk1IUGkzV3ZhZUJ4OVB5blJjRmNmaDIrOFFheUxyQjlqUVJHN3Z0V3VUM0Y0UE5zbXk2T1RQUnNFMTVwTmpJU1hiSGp5aStRN1dObnpxZnYvd0Jsem5kZTNkMXhuUmlyNzBtck9FZXU3TGFvRXBLcXdKNURQN1I4bzJXazVSN0ZWWjRnY2xoTlUxSFJjN1I1SGUxZGhMWUJoVmV5UzlZSE4vQVpZb01rYnN4a0o1OXRBY2t1dHRyS3RaV28yTnphOUxVTW1jTzVqbFl4WHZpUWhrVUJiWkhyRXlLVkoyOWVpL3k1bnAzd3o2RmFjYzhlOGQzK3J3MXZ4QUY4ajhwT0RPbXNUQllkNGk0ZDNTaXF0MTR1TEhtbllMR2FicXRyWVhtdG1ETkdubk1vRnJsSWovRW12bGl2USszdmI0cUYyeTAvdkRjY1V2T2YvcFllcS9zcGtLZytMalpPZTdMMzdhME82TjBGVG9NdHFjaWJiN0tUb05wUTBkSWxEZ1RxYXloSnQ0blVhUUdUZ3h1c3A3eXcvV2trMk4xYklKcGxKY0R0ZTBLU0V5eUphY3NpVER5d3JLUzBsOEVVYXdpdmlrN2QxQTVqMWJtNTFmQi9IcnJMOEFwL2g0QjMrdTJiNHgrWk9KN3c0ZCsrUjJtaGNaMEZscm85WWJXM0ZQZVFBMExkWkVzckN3V3gyVWM4V1NJRjdiQlpJSXlYSk9lQzlvUFl6b252WkptZHp1OVh6SE4xWEcvVXZvRnB5dVBxWEVPZDQzQWJIcDNITDNZNytqMk9DNlBsak91ZFlxNE5LQkVNZFdjODFWRGJaOGNJbExJMkp4d2l4WlFlM3N5ZGs5R2NxWVdKZ0ZJUzhKRHEwYUFhY3NJbVlsazRoVUMyQmpGbFkxSElOUEc1bnByN3QvTjN6clp1SCtLOVcrSEp0dHJ1dTAyM1d4bTk4MmF5SHVUdE81QzJpKzJhaTFEZTY2aTFteW90azFXNGcwalNqSmFrbDhvNWUwVXRrRlp5VHhLSU81QnAwZlBINlp2ZE43c3R6MWZrM2MrMzdyclBlTTFrY3R1OUZKWDZ2aUhSL1d1NnpPbXZ0QUhTZEc0UHIrUVpDaHRjMVZhWkJHaXljejZNWXk5b1FxOFV3SVN4akpQdUhYdW9XWlJCSjFkWm5rR1dvdzR4VTdvNVFDYWVlRW1TZHNSdFhNRkUyU0NLZDBiMmZJbVBXZUJzVEY2a2E3MTVPYi9GdHgxcmREcnVsN3B4M3g3cnVsY2NXdDNjYTVWdEtwZVF0VTVZQXRxcXRySjdEVnVSNlBlTHl5RHRqS2haWFRNMjNWb1hWMWpPVFBBUk9LNk1ZTE5wKzY1bnpmcUZjSlVkTDUvaU9pVklCc2RrRFY3cktVT3RyZ3JHSkZiRWVJRmZnV0F3eHNiVlZJeW9ZMlRzUlZScjBSZk4wSUVGTVlrWll3NVRHdTgyc0loam5ZMTNTcDVJMlJya1IzU3FuYUozMHE1NDQxM2JkcjA4cWM3VXRtMkhWelNSM0NFbWE3ZFdWSVVRSzllM2pUa1ZwSTBzbzdsUkZkQzk3bzNMN3EzSElMR1krc3NMRzNyc3BtcSsxdDZtc29MYXpDb3FzV3d0S0traklocHFXeE5nRmpKTnFhaUVzdUtzcmlaSkF3SXlpR0N3eE5ta1IzMjBlQnIzeU5oaWJKSXhrVWtqWTJJOThVZmw2Y2IzSW5rNWtmbS93WXFxMXZrN3hSTzF5MEl2cjBzVVVFcTZ0aVFnVFM3SUlNaXhNbUZEc2JCMFR6enhSNUpuUkRtbXZoaGVXVkV4azVMb29uVFBlc2JWUmtCNVB5eXNwN2JPMXZOTUJYNSsrb3dNeGVVUU9Oem9sUGM1cXFnTUdxODliVmtGZEdGWTBkYU5ZMkE0RlNaQk1BSEFjWkVPUEd3bVpyNlRRUW1SUGdZR0t5R1NKc0Q0V2p4TmlmQ3hGYXlGOGFNOEhSTmE1eld4cWlzYWpsUkU2VmN5Qkc2YmlXY0ZhRjdac3hWblcySk52WFdKRjdhVEhBV3hza0VwbG9FWElVNGdXeExsRkdsSk5na1lUUElQQStXUnpvWTFhM3o4UjR1VGNaM1FrOGk1Z1JmNCt2cTZqSlhrK0J5a3R4bHFxa1J6YVdzenRtK3BjYlNWOVExemtxd3F5WVlZQkhPUVdPSkZYeUZBQlY4VXFoQ0xKQTFqSVpGSGhWOExZLzhBZzJKL2g1UnRaL1FqVlJHL3QxbDFIeUZ2MElOcFZ4Ynh1RVZaZUZHSFhkZEhzdDB3RzROc0ZSVHk3UVJwcUQyQlJ5b2ltRUZ4elNrcWlMTTkvV0tiWGp2SXI3WGlkQ3ZPV2M0dWQ4QW96Z2R4YTRmTTJPdkRjSEVzQWJoTktYV1RYSTZpd0tzSXl3bXNXQ0pWamkrTEYrbmt2QUJrbmFWSUdMSVMzcnhJZVBDNmR2aWlvM3htY3haRThVYzVFNmQ3SXFvbjFYS0lXOTd4VzBjK3NWMjViVUJyUktTb1Ryd1d3MjR0R1FrNy9VblNlcGdNWUJLazBuNmtxUEhkNmovelA3ZDc0c3duTGVaY3RGc1FlWmM2d25PZ3JjeExDMkR3bVJ6K1JGdEQwYXJFT3NSOC9YMThScGlNYzVxRWtzbG0rS3EzNS9SVjhrWU1RTnJtaUNqQ3RlN3plMGFDS0JyM2RkZVRraWExSE82OXUxN1hyMnloc2U0N2R1TXdwTzNiVHNlMGtBd2ZLaFQ3SGVXZDVNR04yanZseFpiTW9wNDhIYUl2b3hPWkgyaUw0OTVuZmx6bXVZZU1ZZU1ZZU1ZZU1ZZU1aLy9aIiAvPjwvc3ZnPg==);
+  --ic-brand-watermark-opacity: 0.1;
+  --darkreader-bgimg--ic-brand-favicon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zMzMgLTAuNjY3IC0wLjY2NyAwLjAwMCAxLjAwMCAtMC42NjcgMC4zMzMgLTAuNjY3IDAuMDAwIDEuMDAwIC0wLjY2NyAtMC42NjcgMC4zMzMgMC4wMDAgMS4wMDAgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UveC1pY29uO2Jhc2U2NCxBQUFCQUFFQUVCQUFBQUVBQ0FCb0JRQUFGZ0FBQUNnQUFBQVFBQUFBSUFBQUFBRUFDQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRC8vLzhBOFB2L0FPcnE2Z0RqNCtNQStQajRBTXZMeXdDa29LQUFzckt5QU1EQXdBRE16TXdBMTlmWEFQSHg4UUJWVlZVQUlpSWlBSmFXbGdDWm1aa0EzZDNkQUNrcEtRQ0FnSUFBZDNkM0FCWVdGZ0JtWm1ZQWdIei9CRkJRL3dTVEFOWUUvK3pNQk1iVzd3VFc1K2NFa0ttdEJBRC9Nd1FBQUdZRUFBQ1pCQUFBekFRQU13QUVBRE16QkFBelpnUUFNNWtFQURQTUJBQXovd1FBWmdBRUFHWXpCQUJtWmdRQVpwa0VBR2JNQkFCbS93UUFtUUFFQUprekJBQ1paZ1FBbVprRUFKbk1CQUNaL3dRQXpBQUVBTXd6QkFETVpnUUF6SmtFQU16TUJBRE0vd1FBLzJZRUFQK1pCQUQvekFRei93QUUvd0F6QkRNQVpnUXpBSmtFTXdETUJETUEvd1QvTXdBRU16TXpCRE16WmdRek01a0VNelBNQkRNei93UXpaZ0FFTTJZekJETm1aZ1F6WnBrRU0yYk1CRE5tL3dRem1RQUVNNWt6QkRPWlpnUXptWmtFTTVuTUJET1ovd1F6ekFBRU04d3pCRFBNWmdRenpKa0VNOHpNQkRQTS93UXovek1FTS85bUJEUC9tUVF6Lzh3RU0vLy9CR1lBQUFSbUFETUVaZ0JtQkdZQW1RUm1BTXdFWmdEL0JHWXpBQVJtTXpNRVpqTm1CR1l6bVFSbU04d0VaalAvQkdabUFBUm1aak1FWm1abUJHWm1tUVJtWnN3RVpwa0FCR2FaTXdSbW1XWUVacG1aQkdhWnpBUm1tZjhFWnN3QUJHYk1Nd1JtekprRVpzek1CR2JNL3dSbS93QUVadjh6QkdiL21RUm0vOHdFekFEL0JQOEF6QVNabVFBRW1UT1pCSmtBbVFTWkFNd0VtUUFBQkprek13U1pBR1lFbVRQTUJKa0Evd1NaWmdBRW1XWXpCSmt6WmdTWlpwa0VtV2JNQkprei93U1ptVE1FbVpsbUJKbVptUVNabWN3RW1abi9CSm5NQUFTWnpETUVac3htQkpuTW1RU1p6TXdFbWN6L0JKbi9BQVNaL3pNRW1jeG1CSm4vbVFTWi84d0VtZi8vQk13QUFBU1pBRE1FekFCbUJNd0FtUVRNQU13RW1UTUFCTXd6TXdUTU0yWUV6RE9aQk13enpBVE1NLzhFekdZQUJNeG1Nd1NaWm1ZRXpHYVpCTXhtekFTWlp2OEV6SmtBQk15Wk13VE1tV1lFekptWkJNeVp6QVRNbWY4RXpNd0FCTXpNTXdUTXpHWUV6TXlaQk16TXpBVE16UDhFelA4QUJNei9Nd1NaLzJZRXpQK1pCTXovekFUTS8vOEV6QUF6QlA4QVpnVC9BSmtFekRNQUJQOHpNd1QvTTJZRS96T1pCUDh6ekFUL00vOEUvMllBQlA5bU13VE1abVlFLzJhWkJQOW16QVRNWnY4RS81a0FCUCtaTXdUL21XWUUvNW1aQlArWnpBVC9tZjhFLzh3QUJQL01Nd1QvekdZRS84eVpCUC9NekFUL3pQOEUvLzh6Qk16L1pnVC8vNWtFLy8vTUJHWm0vd1JtLzJZRVp2Ly9CUDltWmdUL1p2OEUvLzltQkNFQXBRUmZYMThFZDNkM0JJYUdoZ1NXbHBZRXk4dkxCTEt5c2dUWDE5Y0UzZDNkQk9QajR3VHE2dW9FOGZIeEJQajQrQVR3Ky84QXBLQ2dBSUNBZ0FBQUFQOEFBUDhBQUFELy93RC9BQUFBL3dEL0FQLy9BQUQvLy84QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJBUUFCQW9IQndvTEFBUUVBQUFBQUFBQUN3WUlCZ2NIQndNQkJBQUFBQUFBQUFjTENnZ0ZDZ3NIQ3dBQUFBQUFCQWtHRUFzQUJBRUtCd2dBQUFBQUFBQUZCeEFEQ3dNTEN3WUdBQUFBQUFBQkJnZ0pGQWdIRkJVQ0JnSUFBQUFBQ3dZRkN4SUxDaE1GQ3c0S0FBQUFBQXNPQndzRUVBb0VDd2tIQ1FBQUFBQUxEd1VGREJBTEVRb0xCeEFBQUFBQUFBVUlBd3dIQWcwSUNBNEVBQUFBQUFBSUJ3b0VCQUlFQXdvSkFBQUFBQUFBQXdjSUNnc0xDd1lJQ2dBQUFBQUFBQUVJQmdrSENBY0dCd0FBQUFBQUFBUUJCQVVHQmdjSEJnQUFBQUFBQUFBQUFBQUFBUUlEQkFBQUFRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE9IiAvPjwvc3ZnPg==);
+  --darkreader-bgimg--ic-brand-apple-touch-icon: url(https://instructure-uploads.s3.amazonaws.com/account_93740000000000001/attachments/4918/200x200-01.jpg);
+  --ic-brand-msapplication-tile-color: var(--ic-brand-primary);
+  --darkreader-bgimg--ic-brand-msapplication-tile-square: url(https://instructure-uploads.s3.amazonaws.com/account_93740000000000001/attachments/4919/logo_558x558.jpg);
+  --darkreader-bgimg--ic-brand-msapplication-tile-wide: url(https://instructure-uploads.s3.amazonaws.com/account_93740000000000001/attachments/4920/logo_558x270.jpg);
+  --darkreader-text--fOyUs-color: #c4bfb7;
+  --darkreader-text--fCrpb-color: #c4bfb7;
+  --darkreader-bg--qBMHb-background: #181a1b;
+}
+
+body.darkmode {
+  background-color: #181a1b;
+  color: var(--darkreader-text--ic-brand-font-color-dark);
+}
+
+body.darkmode .ic-Dashboard-header__layout {
+  border-bottom-color: #3e4446;
+  background-image: initial;
+  background-color: rgba(24, 26, 27, 0.95);
+}
+
+body.darkmode a:focus, body.darkmode a:hover {
+  color: var(--darkreader-text--ic-link-color-darkened-10);
+}
+
+body.darkmode a {
+  color: var(--darkreader-text--ic-link-color);
+  -webkit-text-decoration-color: initial;
+          text-decoration-color: initial;
+}
+
+body.darkmode .standalone-icon::before {
+  color: #b2aca2 !important;
+}
+
+body.darkmode #right-side .right-side-list li a > i {
+  color: #b0a99f;
+}
+
+body.darkmode .ic-DashboardCard__header_content {
+  background-image: initial;
+  background-color: #181a1b;
+}
+
+body.darkmode .ic-DashboardCard {
+  background-image: initial;
+  background-color: #181a1b;
+}
+
+body.darkmode .ic-DashboardCard__header-subtitle, body.darkmode .ic-DashboardCard__header-term {
+  color: var(--darkreader-text--ic-brand-font-color-dark-lightened-30);
+}
+
+body.darkmode [data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+
+body.darkmode .ic-DashboardCard__action {
+  color: var(--darkreader-text--ic-brand-font-color-dark-lightened-30);
+}
+
+body.darkmode #right-side .events_list .event-details::after, body.darkmode #right-side .events_list .todo-details::after, body.darkmode #right-side .to-do-list .event-details::after, body.darkmode #right-side .to-do-list .todo-details::after {
+  background-image: none;
+  background-color: rgba(24, 26, 27, 0);
+}
+
+body.darkmode .btn:active, body.darkmode .Button:active, body.darkmode .ui-button:active {
+  background-image: initial;
+  background-color: #292c2e;
+}
+
+body.darkmode .btn, body.darkmode .Button, body.darkmode .ui-button.ui-state-disabled, body.darkmode .ui-button.ui-state-focus, body.darkmode .ui-button.ui-state-hover, body.darkmode .ui-button {
+  background-image: initial;
+  background-color: #1e2021;
+  color: #c4bfb7;
+  border-color: #3e4446;
+  -webkit-text-decoration-color: initial;
+          text-decoration-color: initial;
+  text-shadow: none;
+}
+
+body.darkmode .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+  background-image: initial;
+  background-color: #181a1b;
+}
+
+body.darkmode .medium.ic-Dashboard-header__layout, body.darkmode .large.ic-Dashboard-header__layout, body.darkmode .ic-DashboardCard__header_content, body.darkmode .navigation-tray-container,
+body.darkmode .ic-DashboardCard, body.darkmode .panel, body.darkmode table, body.darkmode #minical, body.darkmode .toolbarView .headerBar, body.darkmode span div, body.darkmode ul, body.darkmode .ig-list .ig-row, body.darkmode tr {
+  background-color: #181a1b;
+}
+
+body.darkmode .jpyTq_bGBk {
+  color: var(--darkreader-text--jpyTq-color);
+}
+
+body.darkmode .enRcg_bGBk.enRcg_pEgL, body.darkmode input.enRcg_bGBk[type].enRcg_pEgL {
+  font-weight: var(--enRcg-fontWeightLight);
+}
+
+body.darkmode .fOyUs_fKyb {
+  background-image: none;
+  background-color: initial;
+  color: var(--darkreader-text--fOyUs-color);
+}
+
+body.darkmode .message-list .messages > li {
+  background-image: initial;
+  background-color: #181a1b;
+  border-bottom-color: #3e4446;
+}
+
+body.darkmode .message-list .date {
+  color: var(--darkreader-text--ic-brand-primary);
+}
+
+body.darkmode .message-list .author {
+  color: #c4bfb7;
+}
+
+body.darkmode .message-list .subject {
+  color: #bab4ab;
+}
+
+body.darkmode .message-list .summary {
+  color: #988f81;
+}
+
+body.darkmode .yyQPt_cSXm {
+  color: var(--darkreader-text--yyQPt-color);
+  background: var(--darkreader-bg--yyQPt-background);
+  border: var(--darkreader-border--yyQPt-borderWidth) solid var(--darkreader-border--yyQPt-borderColor);
+}
+
+body.darkmode .ac-input-box {
+  background-image: initial;
+  background-color: #181a1b;
+  border-color: #3e4446;
+}
+
+body.darkmode select {
+  border-color: #3e4446;
+  background-color: #181a1b;
+}
+
+body.darkmode select, body.darkmode textarea, body.darkmode input[type="text"], body.darkmode input[type="password"], body.darkmode input[type="datetime"], body.darkmode input[type="datetime-local"], body.darkmode input[type="date"], body.darkmode input[type="month"], body.darkmode input[type="time"], body.darkmode input[type="week"], body.darkmode input[type="number"], body.darkmode input[type="email"], body.darkmode input[type="url"], body.darkmode input[type="search"], body.darkmode input[type="tel"], body.darkmode input[type="color"], body.darkmode .uneditable-input {
+  color: var(--darkreader-text--ic-brand-font-color-dark);
+  background-color: #181a1b;
+}
+
+body.darkmode .header-bar {
+  border-bottom-color: #3e4446;
+  background-color: #181a1b;
+}
+
+body.darkmode #calendar-app .fc-event, body.darkmode #calendar-drag-and-drop-container .fc-event {
+  background-color: #181a1b;
+}
+
+body.darkmode #calendar-app .fc-month-view .fc-today, body.darkmode #calendar-drag-and-drop-container .fc-month-view .fc-today {
+  background-image: initial;
+  background-color: #3e4346;
+}
+
+body.darkmode .calendar .fc-head thead .fc-widget-header, body.darkmode #calendar-drag-and-drop-container .fc-head thead .fc-widget-header {
+  color: var(--darkreader-text--ic-brand-font-color-dark-lightened-15);
+}
+
+body.darkmode .fc-state-default {
+  color: #c8c3bc;
+}
+
+body.darkmode #minical .fc-widget-content {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#202325), to(#2b2e30));
+  background-image: linear-gradient(#202325, #2b2e30);
+  color: #c8c3bc;
+}
+
+body.darkmode #minical .fc-toolbar h2 {
+  color: #c8c3bc;
+}
+
+body.darkmode #minical {
+  background-color: #181a1b;
+  text-shadow: none;
+  border-color: #3e4446;
+}
+
+body.darkmode #minical .fc-other-month {
+  color: var(--darkreader-text--ic-brand-font-color-dark-lightened-30);
+  opacity: 1;
+}
+
+body.darkmode #context-list .context_list_context:hover {
+  background-image: initial;
+  background-color: #1e2021;
+}
+
+body.darkmode .item-group-condensed .ig-header {
+  background-color: #1e2021;
+  border-color: #3e4446;
+  color: var(--darkreader-text--ic-brand-font-color-dark);
+}
+
+body.darkmode .list-view a.active {
+  border-left-color: #797164;
+  color: #c4bfb7;
+}
+
+body.darkmode .ig-header .name {
+  color: #bdb7ae;
+  text-shadow: #181A1B 1px 1px 0px;
+}
+
+body.darkmode .ig-list .ig-row a.ig-title {
+  color: var(--darkreader-text--ic-brand-font-color-dark);
+  -webkit-text-decoration-color: initial;
+          text-decoration-color: initial;
+}
+
+body.darkmode .item-group-container {
+  background-image: initial;
+  background-color: #181a1b;
+  border-color: initial;
+}
+
+body.darkmode .nav-icon {
+  background-image: initial;
+  background-color: #181a1b;
+  color: #c4bfb7;
+}
+
+body.darkmode .ic-notification__content {
+  background-image: initial;
+  background-color: #181a1b;
+}
+
+body.darkmode .ic-app-header, body.darkmode .ic-app-header ul, body.darkmode .sidenav {
+  background-color: var(--darkreader-bg--ic-brand-global-nav-bgd);
+}
+
+body.darkmode .modal-content {
+  background-color: #181a1b;
+}
+
+body.darkmode .modalContainer h2 {
+  color: #c4bfb7;
+}
+
+body.darkmode .modalContainer .close {
+  color: #c4bfb7;
+}
+
+body.darkmode .ic-Table.ic-Table--hover-row tbody tr:hover, body.darkmode .ic-Table.ic-Table--hover-row tbody tr.ic-Table__row--bg-neutral:hover, body.darkmode .ic-Table.ic-Table--hover-row tbody tr.ic-Table__row--bg-success:hover, body.darkmode .ic-Table.ic-Table--hover-row tbody tr.ic-Table__row--bg-alert:hover, body.darkmode .ic-Table.ic-Table--hover-row tbody tr.ic-Table__row--bg-danger:hover {
+  background-color: #0f2b38;
+}
+
+body.darkmode #grades_summary th.title .context {
+  color: var(--darkreader-text--ic-brand-font-color-dark);
+}
+
+body.darkmode .fCrpb_egrg, body.darkmode .fCrpb_egrg.fCrpb_fVUh, body.darkmode label.fCrpb_egrg {
+  color: var(--darkreader-text--fCrpb-color);
+}
+
+body.darkmode #breadcrumbs > ul > li + li:last-of-type a {
+  color: var(--darkreader-text--ic-brand-font-color-dark);
+}
+
+body.darkmode .qBMHb_cSXm {
+  background: var(--darkreader-bg--qBMHb-background);
+  border: var(--darkreader-border--qBMHb-borderWidth) var(--darkreader-border--qBMHb-borderStyle) var(--darkreader-border--qBMHb-borderColor);
+}
+
+body.darkmode .cWmNi_bGBk {
+  background-image: none;
+  background-color: transparent;
+  border-color: initial;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #e8e6e3;
+  -webkit-column-rule-color: currentcolor;
+          column-rule-color: currentcolor;
+  list-style-image: none;
+  -webkit-text-decoration-color: initial;
+          text-decoration-color: initial;
+  text-shadow: none;
+}
+
+body.darkmode .ui-tabs .ui-tabs-panel {
+  background-color: #181a1b;
+}
+
+body.darkmode .ui-widget-content {
+  border-color: #484e51;
+  background-image: initial;
+  background-color: #181a1b;
+  color: var(--darkreader-text--ic-brand-font-color-dark);
+}
+
+body.darkmode .event-details {
+  border-color: #464c4f;
+  background-color: #181a1b;
+}
+
+body.darkmode .ui-dialog .ui-dialog-titlebar.ui-widget-header, body.darkmode .ui-dialog .ui-datepicker .ui-widget-header.ui-datepicker-header, body.darkmode .ui-datepicker .ui-dialog .ui-widget-header.ui-datepicker-header {
+  background-image: initial;
+  background-color: #181a1b;
+  border-bottom-color: #3e4446;
+}
+
+body.darkmode .sidenav a:hover {
+  color: #000000;
+}
+
+body.darkmode .sidenav .cursos a, body.darkmode .sidenav .actividades a, body.darkmode .sidenav .eventos a {
+  color: #fff;
+}
+
+body.darkmode .sidenav .nav a:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=darkmode.css.map */

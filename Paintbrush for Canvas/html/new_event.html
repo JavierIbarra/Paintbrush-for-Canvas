@@ -1,0 +1,399 @@
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" style="outline: 0px; z-index: 1002; height: auto; width: auto; top: 74.9962px; left: 163px; display: block;" aria-hidden="false"><div class="ui-dialog-focus-bumper ui-dialog-focus-bumper-top" tabindex="0"></div><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title" role="heading" aria-level="2">Editar el evento</span><button class="ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick">close</span></button></div><div id="edit_event" class="group_user_1974" tabindex="0" style="width: auto; min-height: 0px; height: auto;" scrolltop="0" scrollleft="0"><div class="content ui-tabs ui-widget ui-widget-content ui-corner-all" id="edit_event_tabs">
+    <ul class="tab_list ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+      <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="edit_calendar_event_form_holder" aria-labelledby="ui-id-3" aria-selected="true"><a href="#edit_calendar_event_form_holder" class="edit_calendar_event_option ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Evento</a></li>
+      <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="edit_assignment_form_holder" aria-labelledby="ui-id-4" aria-selected="false"><a href="#edit_assignment_form_holder" class="edit_assignment_option ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Tarea</a></li>
+      <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="edit_planner_note_form_holder" aria-labelledby="ui-id-5" aria-selected="false"><a href="#edit_planner_note_form_holder" class="edit_planner_note_option ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">Mis tareas por hacer</a></li>
+      
+      
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="edit_appointment_group_form_holder" aria-labelledby="ui-id-7" aria-selected="false"><a href="#edit_appointment_group_form_holder" class="edit_appointment_group_option ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7">Grupo de citas</a></li>
+      
+    </ul>
+    <div id="edit_calendar_event_form_holder" class="tab_holder clearfix ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-3" role="tabpanel" aria-expanded="true" aria-hidden="false"><form action="#" id="edit_calendar_event_form" style="padding: 5px;">
+    <div class="event-details-content">
+      <table class="formtable" style="width: 100%;" role="presentation">
+        <tbody><tr>
+          <td style="vertical-align: top;"><label for="calendar_event_title">Título:</label></td>
+          <td>
+            
+              <input id="calendar_event_title" name="calendar_event[title]" size="30" maxlength="255" style="width: 150px;" type="text" value="">
+            
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><label for="calendar_event_date">Fecha:</label></td>
+          <td>
+            <div class="date_field_container">
+              <label class="screenreader-only" id="calendar_event_date_accessible_label">
+                Fecha del evento:
+                Formato como DD-MM-AAAA
+              </label>
+              <div class="input-append"><input id="calendar_event_date" type="text" value="14/09/2021" name="date" style="width: 100px;" class="date_field datetime_field_enabled hasDatepicker" aria-labelledby="calendar_event_date_accessible_label" data-tooltip="" title="DD-MM-AAAA" aria-invalid="false"><button type="button" class="ui-datepicker-trigger btn" aria-hidden="true" tabindex="-1"><i class="icon-calendar-month"></i></button></div><div class="datetime_suggest">mar 14 de sep de 2021</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><label for="calendar_event_start_time">Desde:</label></td>
+          <td>
+            <div style="display: inline-block;">
+              <div class="date_field_container">
+                <label class="screenreader-only" id="calendar_event_start_time_accessible_label">
+                  Hora de comienzo del evento
+                  Formato como hh:mm
+                </label>
+                <input id="calendar_event_start_time" type="text" name="start_time" style="width: 60px;" class="time_field start_time datetime_field_enabled" aria-labelledby="calendar_event_start_time_accessible_label" data-tooltip="" title="hh:mm" aria-invalid="false"><div class="datetime_suggest"> 0:00</div>
+              </div>
+            </div>
+            <div style="display: inline-block; margin: 5px"><label for="calendar_event_end_time">para</label></div>
+            <div style="display: inline-block;">
+              <div class="date_field_container">
+                <label class="screenreader-only" id="calendar_event_end_time_accessible_label">
+                  Hora de finalización del evento
+                  Formato como hh:mm
+                </label>
+                <input id="calendar_event_end_time" type="text" name="end_time" style="width: 60px;" class="time_field end_time datetime_field_enabled" aria-labelledby="calendar_event_end_time_accessible_label" title="hh:mm" aria-invalid="false"><div class="datetime_suggest"> 0:00</div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </td>
+        </tr>
+        
+          <tr>
+            <td style="vertical-align: top;"><label for="calendar_event_location_name">Ubicación:</label></td>
+            <td><input id="calendar_event_location_name" name="location_name" size="30" maxlength="255" style="width: 185px;" type="text" value=""></td>
+          </tr>
+        
+        <tr class="hide">
+          <td style="vertical-align: top;">Conferencia:</td>
+          <td><div id="calendar_event_conference_selection"></div></td>
+        </tr>
+        <tr class="context_select">
+          <td><label for="calendar_event_context">Calendario:</label></td>
+          <td>
+            <select id="calendar_event_context" class="context_id" name="calendar_event[context_code]">
+              
+                
+                  <option value="user_1974">JAVIER ANDRES IBARRA CIUFFARDI</option>
+                
+              
+                
+                  <option value="course_15991">Arquitectura de Computadores</option>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <option value="group_41825">P1 16</option>
+                
+              
+            </select>
+          </td>
+        </tr>
+      </tbody></table>
+      <div id="important_dates" style="display: none;">
+        <label class="label_with_checkbox" for="calendar_event_important_dates">
+          <input type="checkbox" id="calendar_event_important_dates" style="margin: 0">
+          Marcar como fecha importante
+          <span style="display: block"><small>Mostrar evento en la barra lateral del aula principal</small></span>
+        </label>
+      </div>
+    </div>
+    <div class="popover-links-holder event-details-footer pull-right">
+      <a href="/users/1974/calendar_events/new" class="event_button btn btn-secondary more_options_link">Más opciones</a>
+      <button type="submit" class="event_button btn btn-primary">Presentar</button>
+    </div>
+  </form></div>
+    <div id="edit_assignment_form_holder" class="tab_holder clearfix ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-4" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;"><form class="validated-form-view"><div id="edit_assignment_form" style="padding: 5px;">
+    <div class="event-details-content">
+      <table class="formtable" style="width: 100%;" role="presentation">
+        <tbody><tr>
+          <td><label for="assignment_title">Título:</label></td>
+          <td><input id="assignment_title" name="assignment[name]" size="30" maxlength="255" style="width: 200px;" type="text" value=""></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="assignment_due_at">Fecha de entrega:</label>
+            <label class="screenreader-only" id="calendar_assignment_due_date_accessible_label">
+               Fecha de entrega el
+               Formato como DD-MM-AAAA hh:mm
+             </label>
+          </td>
+          <td>
+            <div class="input-append"><input class="datetime_field datetime_field_enabled hasDatepicker" id="assignment_due_at" name="assignment[due_at]" value="mar 14 de sep de 2021 0:00" size="30" style="width: 150px;" type="text" aria-labelledby="calendar_assignment_due_date_accessible_label" data-tooltip="" title="DD-MM-AAAA hh:mm" aria-invalid="false"><button type="button" class="ui-datepicker-trigger btn" aria-hidden="true" tabindex="-1"><i class="icon-calendar-month"></i></button></div><div class="datetime_suggest">mar 14 de sep de 2021</div>
+          </td>
+        </tr>
+        <tr class="context_select">
+          <td><label for="assignment_context">Calendario:</label></td>
+          <td>
+            <select id="assignment_context" class="context_id">
+              
+                
+              
+                
+                  <option value="course_15991">Arquitectura de Computadores</option>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="assignment_group">Grupo:</label></td>
+          <td class="assignment_group_select">
+            <select id="assignment_group" class="assignment_group" name="assignment[assignment_group_id]" aria-label="Grupo:">
+              <option value="new">[ New Group ]</option>
+            </select>
+          </td>
+        </tr>
+        
+        <tr class="context_select">
+          <td>Publicar:</td>
+          <td>
+            <!-- start super toggle -->
+            <label class="ic-Super-toggle--on-off" for="assignment_published">
+              <div class="screenreader-only">Publicar</div>
+              <input type="checkbox" id="assignment_published" name="assignment[published]" class="ic-Super-toggle__input">
+              <div class="ic-Super-toggle__container" aria-hidden="true" data-checked="Sí" data-unchecked="No">
+                <div class="ic-Super-toggle__switch">
+                  <div class="ic-Super-toggle__option--LEFT">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="548.9" height="548.9" viewBox="0 0 548.9 548.9" xml:space="preserve"><polygon points="449.3 48 195.5 301.8 99.5 205.9 0 305.4 95.9 401.4 195.5 500.9 295 401.4 548.9 147.5 "></polygon></svg>
+                  </div>
+                  <div class="ic-Super-toggle__option--RIGHT">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 28 28" xml:space="preserve"><polygon points="28 22.4 19.6 14 28 5.6 22.4 0 14 8.4 5.6 0 0 5.6 8.4 14 0 22.4 5.6 28 14 19.6 22.4 28"></polygon></svg>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <!-- end super toggle -->
+          </td>
+        </tr>
+      </tbody></table>
+      <div id="important_dates" style="padding-top: 10px;">
+        <label class="label_with_checkbox" for="calendar_event_important_dates">
+          <input type="checkbox" id="calendar_event_important_dates" style="margin: 0">
+          Marcar como fecha importante
+          <span style="display: block"><small>Mostrar evento en la barra lateral del aula principal</small></span>
+        </label>
+      </div>
+    </div>
+    <div class="popover-links-holder event-details-footer pull-right">
+      <a href="#" class="event_button btn btn-secondary more_options_link">Más opciones</a>
+      <button type="submit" class="event_button btn btn-primary save_assignment">Presentar</button>
+    </div>
+  </div>
+  </form></div>
+    <div id="edit_appointment_group_form_holder" class="tab_holder clearfix ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-7" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;"><form action="/api/v1/appointment_groups" id="edit_appointment_form">
+    <div class="left-column-wrapper event-details-content">
+      <p>
+        <label for="edit-appointment-name-igSfZGFN"><b>Nombre</b></label><br>
+        <input type="text" id="edit-appointment-name-igSfZGFN" name="title" value="">
+      </p>
+      <p>
+        <label for="edit-appointment-location-igSfZGFN"><b>Ubicación</b></label><br>
+        <input type="text" id="edit-appointment-location-igSfZGFN" name="location" value="">
+      </p>
+      <div class="select-calendar-container">
+          <b>Calendario</b><br>
+        <button class="btn ag_contexts_selector">Seleccionar calendarios</button>
+        <div class="ag-menu-container"><div class="ag_contexts_menu hidden">
+    <ul class="ag-contexts"><li>
+    <input type="checkbox" title="Arquitectura de Computadores" name="context_codes[]" value="course_15991" id="option_course_15991">
+    <label title="Arquitectura de Computadores" for="option_course_15991">Arquitectura de Computadores</label>
+    <button class="ag_sections_toggle">
+      <span class="screenreader-only">Mostrar las secciones del curso para el curso Arquitectura de Computadores</span>
+    </button>
+    <ul class="ag_sections hidden">
+      
+        
+          <li>
+            <input title="NRC 433" type="checkbox" name="sections[]" value="course_section_16279" id="option_course_section_16279">
+            <label title="NRC 433" for="option_course_section_16279" aria-label="Sección del curso NRC 433">NRC 433</label>
+          </li>
+        
+      
+    </ul>
+  </li></ul>
+    <button class="btn btn-small ag_contexts_done">Listo</button>
+  </div>
+  </div>
+      </div>
+      <p>
+        <input name="use_group_signup" type="hidden" value="0">
+  <input type="checkbox" value="1" id="group-signup-checkbox-igSfZGFN" name="use_group_signup" class="group-signup-checkbox" disabled="disabled">
+        <label for="group-signup-checkbox-igSfZGFN">Estudiantes que se han registrado en grupo.</label>
+      </p>
+      <div class="group-signup" style="display: none">
+        <label for="edit-appointment-group-cat-igSfZGFN"><b>Categoría de grupo</b></label><br>
+        <div class="group_select">
+          <select id="edit-appointment-group-cat-igSfZGFN" name="group_category_id"></select>
+        </div>
+      </div>
+    </div>
+    <div class="right-column-wrapper">
+      <div class="time-block-list-wrapper">
+        <div class="time-block-list">
+          <table class="time-block-list-header" role="presentation">
+            <tbody><tr>
+              <td class="date-column">Fecha</td>
+              <td class="time-range-column" colspan="4">Intervalo de tiempo</td>
+            </tr>
+          </tbody></table>
+          <div class="time-block-list-body-wrapper form-inline">
+            <table class="time-block-list-body"><tbody><tr>
+    <td class="date-column">
+      <div class="input-append"><input name="date" class="date_field datetime_field_enabled hasDatepicker" value="14/09/2021" aria-label="FechaFormato como DD-MM-AAAA" type="text" data-tooltip="" title="DD-MM-AAAA" id="dp1631657865875" aria-invalid="false"><button type="button" class="ui-datepicker-trigger btn" aria-hidden="true" tabindex="-1"><i class="icon-calendar-month"></i></button></div><div class="datetime_suggest">mar 14 de sep de 2021</div>
+      
+    </td>
+    <td class="start-time-column">
+      <input name="start_time" class="time_field start_time datetime_field_enabled" value="" aria-label="Hora de inicioFormato como hh:mm" type="text" data-tooltip="" title="hh:mm" aria-invalid="false"><div class="datetime_suggest"></div>
+    </td>
+    <td class="separator-column">-</td>
+    <td class="end-time-column">
+      <input name="end_time" class="time_field end_time datetime_field_enabled" value="" aria-label="Hora de finalizaciónFormato como hh:mm" type="text" data-tooltip="" title="hh:mm" aria-invalid="false"><div class="datetime_suggest"></div>
+    </td>
+    <td class="delete-column">
+      
+        <a href="#" class="delete-block-link icon-end">
+          <span class="screenreader-only">Eliminar intervalo de tiempo</span>
+        </a>
+      
+    </td>
+  </tr></tbody></table>
+          </div>
+          <div class="splitter">
+            <p>
+              Dividir en intervalos iguales de <input type="number" pattern="[0-9]" name="duration" value="30" style="width: 40px" aria-label="Minutos por franja horaria"> minutos. <a class="split-link Button" href="#">Ir</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 1.5em">
+        <div id="options_help_dialog" style="display: none;">
+          <p>Algunas reservas existentes sobrepasan el límite que ha agregado. Estas no serán afectadas, este cambio solo previene que se hagan nuevas reservas.</p>
+          <p>No obstante, puede eliminar manualmente cualquier reserva existente</p>
+        </div>
+        <b>Opciones</b>
+        <ul class="ag-options">
+          <li>
+            <input name="per_slot_option" type="hidden" value="0">
+  <input type="checkbox" value="1" id="appointment-blocks-per-slot-option-button-igSfZGFN" name="per_slot_option" class="appointment-blocks-per-slot-option-button">
+            
+              <label for="appointment-blocks-per-slot-option-button">
+                Limitar cada franja horaria a <input type="number" pattern="[0-9]" name="participants_per_appointment" value="undefined" min="1" style="width: 40px;" aria-label="Cantidad máxima de usuarios/grupos por cita" disabled="disabled"> <span style="display:none;" class="per_appointment_groups_label">grupos.</span> <span class="per_appointment_users_label">usuarios.</span>
+              </label>
+            
+            <a href="#" class="reservation_help hidden" title="¿Cómo afectará esto a las reservas?">
+              <img alt="Help" src="/images/help.png">
+            </a>
+          </li>
+          <li>
+            <label for="appointment-blocks-participant-visibility-button-igSfZGFN"><input name="participant_visibility" type="hidden" value="0">
+  <input type="checkbox" value="1" id="appointment-blocks-participant-visibility-button-igSfZGFN" name="participant_visibility">
+              Permite que los estudiantes vean quién se ha registrado durante los períodos que todavía están disponibles.
+            </label>
+          </li>
+          <li>
+            <input name="max_appointments_per_participant_option" type="hidden" value="0">
+  <input type="checkbox" value="1" id="max-per-student-option-igSfZGFN" name="max_appointments_per_participant_option" class="max-per-student-option">
+            <label for="max-per-student-option">
+              Limitar participantes para que participen en <input type="number" pattern="[0-9]" name="max_appointments_per_participant" value="undefined" min="1" style="width: 40px" aria-label="Cantidad máxima de citas a las que puede asistir un participante"> cita(s)
+            </label>
+            <a href="#" class="reservation_help hidden" title="¿Cómo afectará esto a las reservas?">
+              <img alt="Help" src="/images/help.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="details-wrapper">
+      <label for="edit-appointment-details-igSfZGFN"><b>Detalles:</b></label><br>
+      <textarea id="edit-appointment-details-igSfZGFN" name="description" class="input-block-level"></textarea>
+    </div>
+    <div class="popover-links-holder event-details-footer pull-right scheduler-event-details-footer">
+      
+        <a href="#" class="event_button btn btn-secondary more_options_link cancel_btn">Cancelar</a>
+        <button type="submit" class="event_button btn btn-primary">Publicar</button>
+      
+    </div>
+  </form>
+  </div>
+    <div id="edit_planner_note_form_holder" class="tab_holder clearfix ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-5" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;"><form class="validated-form-view">
+    <div class="event-details-content">
+      <table class="formtable" style="width: 100%;" role="presentation">
+        <tbody><tr>
+          <td style="vertical-align: top;"><label for="planner_note_title">Título:</label></td>
+          <td>
+            
+              <input id="planner_note_title" name="title" size="30" maxlength="255" style="width: 150px;" type="text" value="">
+            
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><label for="planner_note_date">Fecha:</label></td>
+          <td>
+            <div class="date_field_container">
+              <label class="screenreader-only" id="planner_note_date_accessible_label">
+                Fecha de las tareas por hacer:
+                Formato como DD-MM-AAAA
+              </label>
+              <div class="input-append"><input id="planner_note_date" type="text" value="mar 14 de sep de 2021" name="date" style="width: 100px;" class="date_field datetime_field_enabled hasDatepicker" aria-labelledby="planner_note_date_accessible_label" data-tooltip="" title="DD-MM-AAAA" aria-invalid="false"><button type="button" class="ui-datepicker-trigger btn" aria-hidden="true" tabindex="-1"><i class="icon-calendar-month"></i></button></div><div class="datetime_suggest">mar 14 de sep de 2021</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;"><label for="planner_note_time">Hora:</label></td>
+          <td>
+            <div style="display: inline-block;">
+              <div class="date_field_container">
+                <label class="screenreader-only" id="planner_note_time_accessible_label">
+                  Hora de las tareas por hacer
+                  Formato como hh:mm
+                </label>
+                <input id="planner_note_time" type="text" name="time" style="width: 60px;" class="time_field note_time datetime_field_enabled" aria-labelledby="planner_note_time_accessible_label" data-tooltip="" title="hh:mm" aria-invalid="false"><div class="datetime_suggest"></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr class="context_select">
+          <td><label for="planner_note_context">Calendario:</label></td>
+          <td>
+            <select id="planner_note_context" class="context_id" name="context_code">
+              
+                <option value="user_1974">JAVIER ANDRES IBARRA CIUFFARDI</option>
+              
+                <option value="course_16009">INTRO. AL DES. DE VIDEOJUEGOS</option>
+              
+                <option value="course_16022">Proyecto Desarrollo Software</option>
+              
+                <option value="course_16024">SISTEMAS EMBEBIDOS</option>
+              
+                <option value="course_12134">UANDES al día</option>
+              
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="details_textarea">Detalles:</label></td>
+          <td><textarea id="details_textarea" class="details_textarea" style="resize: none; height: 10rem;" name="details"></textarea></td>
+      </tr></tbody></table>
+    </div>
+    <div class="popover-links-holder event-details-footer pull-right">
+      <button type="submit" class="event_button btn btn-primary save_note">Presentar</button>
+    </div>
+  
+  </form></div>
+    

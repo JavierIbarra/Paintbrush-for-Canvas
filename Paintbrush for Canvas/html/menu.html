@@ -1,0 +1,114 @@
+<style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 100px;
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+
+    }
+    #main{
+        margin-right: 100px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 12px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #f1f1f1;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .cursos a{
+      text-align: center;
+    }
+
+    .sidenav a.item{
+      border-radius: 0 5px 5px 0;
+    }
+    
+    .sidenav  a:hover {
+      color: #000000;
+    }
+    .sidenav .nav a:hover {
+      color: #fff;
+    }
+    
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    /* ---------------------- */
+    .sidenav h2{
+      font-size: 16px;
+      color: white;
+      padding: 8px 8px 8px 8px;
+    }
+    .dropdown-container, .dropdown-container-event {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+    
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    .sidenav p{
+      font-size: 12px; 
+    }
+
+</style>
+
+
+<div id="mySidenav" class="sidenav">
+    <nav class="nav">
+        <div class="burger">
+          <span style="cursor:pointer"><img src="https://img.icons8.com/color/128/000000/canvas-student.png"/></span>
+        </div>
+      
+        <ul id="select_item" class="nav__list">
+          <li class="nav__item" title="Modo Oscuro">
+            <a href="#1" class="nav__link c-yellow" ><i class="fas fa-moon"></i></a>
+          </li>
+          <li id="btnModal" class="nav__item" title="Editar Menu">
+            <a href="#2" class="nav__link c-blue scrolly"><i class="fas fa-edit"></i></i></a>
+          </li>
+          <li id="btnEventModal" class="nav__item" title="Crear Evento">
+            <a href="#3" class="nav__link c-red"><i class="far fa-calendar-plus"></i></a>
+          </li>
+          <li id="btnModalTimer" class="nav__item" title="Timer">
+            <a href="#4" class="nav__link c-white"><i class="fas fa-bell"></i></a>
+          </li>
+          <li class="nav__item" title="Notas">
+            <a href="#5" class="nav__link c-morado"><i class="fas fa-clipboard-list"></i></a>
+          </li>
+          <li id="btnModalConfig" class="nav__item" title="Configuracion">
+            <a href="#6" class="nav__link c-green"><i class="fas fa-wrench"></i></a>
+          </li>
+        </ul>
+    </nav>
+    
+    <div class="cursos"> </div>
+    <div class="actividades"><h2>Actividades</h2> </div>
+    <div class="eventos"><h2>Mis Eventos</h2> </div>
+</div>
+

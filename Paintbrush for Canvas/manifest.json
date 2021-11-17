@@ -1,0 +1,53 @@
+{
+    "manifest_version": 3,
+    "name": "Paintbrush for Canvas",
+    "description":"Extencion para canvas instructure",
+    "version": "1.0",
+    "icons":{
+        "16":"./tmp/logo_16.png",
+        "32":"./tmp/logo_32.png",
+        "48":"./tmp/logo_48.png",
+        "128":"./tmp/logo_128.png"
+    },
+    "action":{
+        "default_popup":"./popup.html",
+        "default_icons":{
+            "16":"./tmp/logo_16.png",
+            "32":"./tmp/logo_32.png",
+            "48":"./tmp/logo_48.png",
+            "128":"./tmp/logo_128.png"
+        }
+    },
+    "permissions":[
+        "tabs",
+        "storage",
+        "scripting",
+        "identity"
+    ],
+    "host_permissions":[
+        "https://*.instructure.com/*"
+    ],
+    "options_page": "./html/options.html",
+    "background":{
+        "service_worker": "js/background.js"
+    },
+    "content_scripts":[{
+        "matches":["https://*.instructure.com/*"],
+        "js": ["./js/jquery-3.6.0.min.js",
+            "./js/API.js",  
+            "./js/modalMenu.js", 
+            "./js/modalConfig.js", 
+            "./js/modalEvent.js",
+            "./js/menu.js",
+            "./js/notas.js",
+            "./js/cursos.js",
+            "./js/content.js",
+            "./js/download.js",
+            "./js/fontawesome.js"],
+        "css": ["./css/darkmode.css", "./css/estilos.css", "./css/nav.css"]
+    }],
+    "web_accessible_resources": [{
+        "resources": [ "html/menu.html","html/modal.html","html/modalConfig.html", "html/modalEvent.html", "html/modalTimer.html", "html/timer.html"],
+        "matches":["https://*.instructure.com/*"]
+    }]
+}

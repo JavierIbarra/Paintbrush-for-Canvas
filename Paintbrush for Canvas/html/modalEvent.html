@@ -1,0 +1,29 @@
+<div id="eventModal" class="modalContainer">
+    <div class="modal-content">
+        <span class="close">×</span>
+        <h2>Crear Evento</h2>
+        <div class="new_event">
+            <div>
+                <label for="calendar_event_title">Título:</label> 
+                <input id="calendar_event_title" name="calendar_event[title]" size="30" maxlength="255" style="width: 150px;" type="text" value="">
+            </div>
+            <div>
+                <label for="calendar_event_date">Fecha:</label>
+                <input id="calendar_event_date" type="date" name="date" style="width: 150px;" class="date_field datetime_field_enabled hasDatepicker" aria-labelledby="calendar_event_date_accessible_label" data-tooltip="" title="DD-MM-AAAA" aria-invalid="false">
+            </div>
+            <div>
+                <label for="calendar_event_start_time">Desde:</label>
+                <input id="calendar_event_start_time" type="time" name="start_time" class="time_field start_time datetime_field_enabled" aria-labelledby="calendar_event_start_time_accessible_label" data-tooltip="" title="hh:mm" aria-invalid="false">
+                <label for="calendar_event_end_time">para</label>
+                <input id="calendar_event_end_time" type="time" name="end_time" class="time_field end_time datetime_field_enabled" aria-labelledby="calendar_event_end_time_accessible_label" data-tooltip="" title="hh:mm" aria-invalid="false"><div class="datetime_suggest">
+            </div>
+            <div>
+                <label for="calendar_event_location_name">Ubicación:</label>
+                <input id="calendar_event_location_name" name="location_name" size="30" maxlength="255" style="width: 185px;" type="text" value="">
+            </div>
+        </div>
+        <button id="crear_event">Crear</button>
+    </div>
+</div>
+
+
