@@ -1,11 +1,11 @@
-#Paintbrus for Canvas
+# Paintbrus for Canvas
 
-##Funcionalidades
+## Funcionalidades
 
-*Modo oscuro	
-*Editar Menu
-*Crear Evento	
-*Notas	
-*Configuracion	
-*Acceso a cursos	
-*Actividades
+* Modo oscuro	
+* Editar Menu
+* Crear Evento	
+* Notas	
+* Configuracion	
+* Acceso a cursos	
+* Actividades
